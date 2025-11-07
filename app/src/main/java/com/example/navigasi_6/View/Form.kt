@@ -40,7 +40,8 @@ fun FormIsian(
     ){ isiRuang ->
         Column(modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.Top,
-            horizontalAlignment = Alignment.CenterHorizontally) {
+            horizontalAlignment = Alignment.CenterHorizontally)
+        {
             OutlinedTextField(
                 value = "",
                 singleLine = true,
@@ -71,7 +72,14 @@ fun FormIsian(
                 thickness = 1.dp,
                 color = Color.Red
             )
-
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .width(250.dp),
+                label = {Text(text = "Alamat")},
+                onValueChange = {},
+            )
 
 
         }
